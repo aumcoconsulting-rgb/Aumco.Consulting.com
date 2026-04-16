@@ -4,6 +4,7 @@ import { Menu, X, BarChart3 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { SiteSearch } from "@/components/SiteSearch";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,14 +58,16 @@ export const Navbar = () => {
         </div>
 
         <div className="ml-auto hidden md:flex items-center gap-4">
+          <SiteSearch />
           <ThemeToggle />
-          <Button asChild size="sm">
+          <Button asChild size="sm" aria-label="Book a free consultation">
             <a href="#contact">Free Consultation</a>
           </Button>
         </div>
 
         {/* Mobile Nav Toggle */}
         <div className="flex items-center gap-2 md:hidden ml-auto">
+          <SiteSearch />
           <ThemeToggle />
           <button
             className="text-foreground p-2"

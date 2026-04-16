@@ -3,8 +3,8 @@ import { motion } from "motion/react";
 import { 
   Megaphone, 
   TrendingUp, 
-  Briefcase, 
-  ShieldCheck,
+  Lightbulb, 
+  Scale,
   CheckCircle2
 } from "lucide-react";
 
@@ -35,7 +35,7 @@ const serviceCategories = [
   },
   {
     title: "Business Consulting",
-    icon: Briefcase,
+    icon: Lightbulb,
     color: "bg-purple-500",
     items: [
       "Business structure & registration",
@@ -48,7 +48,7 @@ const serviceCategories = [
   },
   {
     title: "Legal & Compliance",
-    icon: ShieldCheck,
+    icon: Scale,
     color: "bg-red-500",
     items: [
       "MSME, GST, ROC registration",
@@ -62,7 +62,12 @@ const serviceCategories = [
 
 export const Services = () => {
   return (
-    <section id="services" className="py-16 md:py-20 bg-muted/30">
+    <section id="services" className="relative py-16 md:py-20 bg-muted/30 overflow-hidden">
+      {/* Mesh Gradient Background */}
+      <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-30 pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-400/20 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary/20 rounded-full blur-[120px]" />
+      </div>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Core Service Categories</h2>

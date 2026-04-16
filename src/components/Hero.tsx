@@ -45,16 +45,19 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-4 items-center"
           >
             <Button size="lg" className="gap-2 text-base px-8" asChild>
               <a href="#contact">
                 Book Free Consultation <ArrowRight size={18} />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="text-base px-8" asChild>
-              <a href="#services">Explore Services</a>
-            </Button>
+            <div className="flex flex-col items-start">
+              <Button size="lg" variant="outline" className="text-base px-8" asChild>
+                <a href="#contact">Download Growth Checklist</a>
+              </Button>
+              <span className="text-[10px] text-muted-foreground mt-1 ml-1 uppercase tracking-tighter">Free PDF Resource</span>
+            </div>
           </motion.div>
 
           <motion.div
@@ -65,10 +68,12 @@ export const Hero = () => {
           >
             <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border bg-card">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
-                alt="Business Strategy Session"
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=75&w=1200&auto=format&fit=crop"
+                alt="Aumco Consulting team conducting a business strategy session for growth scaling"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
             </div>

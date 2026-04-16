@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { ClientLogos } from "@/components/ClientLogos";
 import { Services } from "@/components/Services";
 import { Process } from "@/components/Process";
 import { Pricing } from "@/components/Pricing";
@@ -9,6 +10,7 @@ import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { Toaster } from "sonner";
 
 import { ThemeProvider } from "@/components/theme-provider";
@@ -20,6 +22,7 @@ export default function App() {
         <Navbar />
         <main>
           <Hero />
+          <ClientLogos />
           <Services />
           <Process />
           <Pricing />
@@ -30,6 +33,7 @@ export default function App() {
         </main>
         <Footer />
         <FloatingWhatsApp />
+        <ScrollToTop />
         <Toaster position="top-center" richColors />
       </div>
     </ThemeProvider>

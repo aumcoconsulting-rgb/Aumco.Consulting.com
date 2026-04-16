@@ -8,8 +8,10 @@
     <meta name="description" content="Aumco Consulting specializes in building high-performance growth systems and business scaling strategies. We help startups and enterprises automate sales, optimize marketing, and drive sustainable revenue growth. Book your free consultation today." />
     <meta name="keywords" content="business scaling, growth systems, revenue growth strategies, sales automation consulting, performance marketing agency, business process optimization, startup growth consulting, marketing automation systems, lead generation systems, Aumco Consulting" />
     <meta name="author" content="Aumco Consulting" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://aumcoconsulting.com/" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%230047AB%22 font-family=%22serif%22 font-style=%22italic%22 font-weight=%22bold%22>A</text></svg>" />
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Preconnect for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,6 +31,22 @@
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" />
 
     <meta name="theme-color" content="#0d1b2e" />
+
+    <!-- Google Analytics -->
+    <script>
+      const gaId = "%VITE_GA_ID%";
+      if (gaId && gaId !== "%VITE_GA_ID%") {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', gaId);
+      }
+    </script>
 
     <script type="application/ld+json">
     {
