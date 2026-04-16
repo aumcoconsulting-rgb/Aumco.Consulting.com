@@ -36,10 +36,10 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center gap-12">
         <a href="#home" className="flex items-baseline gap-0.5 group">
-          <span className="font-serif italic font-bold text-4xl tracking-tighter text-[#0047AB] dark:text-blue-400">
+          <span className="font-serif italic font-bold text-4xl tracking-tighter text-primary">
             Aumco
           </span>
-          <span className="font-sans font-bold text-xl text-black dark:text-white">
+          <span className="font-sans font-bold text-xl text-foreground">
             Consulting<span className="text-sm font-medium">.com</span>
           </span>
         </a>

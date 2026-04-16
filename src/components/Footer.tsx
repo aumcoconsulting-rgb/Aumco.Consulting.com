@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <a href="#home" className="flex items-baseline gap-0.5 group">
-                <span className="font-serif italic font-bold text-3xl tracking-tighter text-blue-500">
+                <span className="font-serif italic font-bold text-3xl tracking-tighter text-primary">
                   Aumco
                 </span>
                 <span className="font-sans font-bold text-lg text-white">
